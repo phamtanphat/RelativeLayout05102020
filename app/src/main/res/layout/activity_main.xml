@@ -4,50 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textview1"
+        android:textColor="#FFFFFF"
+        android:background="#F80602"
+        android:id="@+id/textViewRed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="View 1"
+        android:text="Red"
+        android:textSize="30sp" />
+    <TextView
+        android:textColor="#FFFFFF"
+        android:background="#D4E157"
+        android:id="@+id/textViewGreen"
+        android:layout_below="@id/textViewRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_below="@id/textViewGreen"
+        android:textColor="#FFFFFF"
+        android:background="#29B6F6"
+        android:id="@+id/textViewBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
         android:textSize="30sp" />
 
+
     <TextView
-        android:id="@+id/textview2"
+        android:textColor="#FFFFFF"
+        android:background="#FFA726"
+        android:id="@+id/textViewOrange"
+        android:layout_below="@id/textViewBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/textview1"
-        android:layout_toLeftOf="@id/textview1"
-        android:text="View 2 2 "
+        android:text="Orange"
         android:textSize="30sp" />
     <TextView
+        android:textColor="#FFFFFF"
+        android:background="#9F9F9F"
+        android:id="@+id/textViewGray"
+        android:layout_below="@id/textViewOrange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/textview1"
-        android:layout_toEndOf="@id/textview1"
-        android:text="View 3"
+        android:text="Gray"
         android:textSize="30sp" />
     <TextView
+        android:textColor="#FFFFFF"
+        android:background="#EC407A"
+        android:id="@+id/textViewPink"
+        android:layout_below="@id/textViewGray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textview1"
-        android:layout_toLeftOf="@id/textview1"
-        android:text="View 4"
-        android:textSize="30sp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textview1"
-        android:layout_toEndOf="@id/textview1"
-        android:text="View 5"
-        android:textSize="30sp" />
-    <TextView
-        android:layout_alignLeft="@id/textview2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/textview2"
-        android:text="View 6"
+        android:text="Pink"
         android:textSize="30sp" />
 </RelativeLayout>
